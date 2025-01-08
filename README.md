@@ -1,29 +1,30 @@
-# Nome do Projeto
+# Project Name
 
+## Project Description
 
-## Descrição do Projeto
+_Description_
 
-_Descrição_
-
-## Ambiente e Ferramentas
+## Environment and Tools
 
 - **Frontend:** React, etc.
-- **Ferramentas de build:** 
-- **Outras ferramentas:** Git, GitHub.
+- **Build Tools:** Vite
+- **Other Tools:** Git, GitHub.
 
-## Etapas para Executar e Depurar
+## Steps to Run and Debug
 
-
-1. Clone o repositório:
+1. Clone the repository:
     ```bash
-   git clone https://github.com/jotaMch/TAQ-GITHUB-BOT.git -l nome-do-repositorio
-2. Navegue até o diretório do projeto:
+    git clone https://github.com/jotaMch/TAQ-GITHUB-BOT.git -l repository-name
+2. Navigate to the project directory:
     ```bash
-    cd nome-do-repositorio
-3. Instale as dependências:
+    cd repository-name
+
+3. Install the dependencies:
     ```bash
     npm install
-4. Para iniciar o servidor (ou frontend):
+
+4. To start the server (or frontend):
     ```bash
     npm start
-5. Para depurar use o Console do Chrome DevTools
+
+5. To debug, use the Chrome DevTools Console
