@@ -25,3 +25,8 @@ form{
 .flex-form, #entrar {
     width: 100%;
 }
+
+.erro{
+    color: rgb(228, 17, 17);
+    font-size: 12px;
+}
