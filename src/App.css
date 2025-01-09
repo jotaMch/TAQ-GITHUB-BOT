@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", serif;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 250px;
+}
+
+.flex-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.flex-form, #entrar {
+    width: 100%;
+}

@@ -1,10 +1,11 @@
 import './App.css';
+import Form from './components/molecules/form-page/Form';
 
 function App() {
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <main>
+      <Form />
+    </main>
   );
 }
 
