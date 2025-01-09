@@ -6,7 +6,7 @@ _Description_
 
 ## Environment and Tools
 
-- **Frontend:** React
+- **Frontend:** React, Typescript
 - **Build Tools:** Vite
 - **Other Tools:** Git, GitHub
 - **Node.js Version:** 20.10.0
