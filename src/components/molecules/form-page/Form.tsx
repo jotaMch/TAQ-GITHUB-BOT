@@ -34,8 +34,8 @@ const Form: React.FC = () => {
   };
 
   return (
-    <div>
-      <h2>Bem vindo(a) à Taqtile</h2>
+    <div className='container'>
+      <h2>Bem vindo(a) ao Instaq</h2>
       <form onSubmit={handleSubmit}>
         <div className='flex-form'>
           <Label htmlFor='e-mail' text='E-mail' className='email-label' />
