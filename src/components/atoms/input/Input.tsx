@@ -7,12 +7,13 @@ interface InputProps {
   required?: boolean;
 }
 
+const inputStyled = {
+  height: '60px',
+  borderRadius: '10px',
+  border: '1px solid #555',
+};
+
 const Input: React.FC<InputProps> = ({ id, type, className, required }) => {
-  const inputStyled = {
-    height: '38px',
-    borderRadius: '10px',
-    border: '1px solid #555',
-  };
   return <input style={inputStyled} id={id} type={type} className={className} required={required} />;
 };
 

@@ -6,7 +6,7 @@ _Description_
 
 ## Environment and Tools
 
-- **Frontend:** React, etc.
+- **Frontend:** React, Typescript.
 - **Build Tools:** Vite
 - **Other Tools:** Git, GitHub.
 

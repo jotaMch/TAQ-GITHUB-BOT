@@ -8,8 +8,12 @@ interface LabelProps {
 }
 
 const Label: React.FC<LabelProps> = ({ htmlFor, text, className }) => {
+  const labelStyled = {
+    fontSize: '24px',
+  };
+
   return (
-    <label htmlFor={htmlFor} className={className}>
+    <label style={labelStyled} htmlFor={htmlFor} className={className}>
       {text}
     </label>
   );

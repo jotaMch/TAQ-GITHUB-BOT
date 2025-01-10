@@ -14,9 +14,9 @@ const Button: React.FC<ButtonProps> = ({ id, border, text, background = 'blue' }
     border: border,
     borderRadius: '5px',
     cursor: 'pointer',
-    fontSize: '16px',
+    fontSize: '24px',
     fontWeight: 'bold',
-    height: '38px',
+    height: '60px',
   };
 
   return (

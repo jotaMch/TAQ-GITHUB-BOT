@@ -12,8 +12,12 @@ main{
     align-items: center;
 }
 
-form{
-    width: 250px;
+.container{
+    width: 450px;
+}
+
+form {
+    width: 100%;
 }
 
 .flex-form{
@@ -24,4 +28,10 @@ form{
 
 .flex-form, #entrar {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
 }
