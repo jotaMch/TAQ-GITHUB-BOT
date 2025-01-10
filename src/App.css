@@ -12,8 +12,12 @@ main{
     align-items: center;
 }
 
-form{
-    width: 250px;
+.container{
+    width: 450px;
+}
+
+form {
+    width: 100%;
 }
 
 .flex-form{
@@ -26,7 +30,8 @@ form{
     width: 100%;
 }
 
-.erro{
-    color: rgb(228, 17, 17);
-    font-size: 12px;
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
 }
