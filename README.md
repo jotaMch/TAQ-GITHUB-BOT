@@ -7,8 +7,9 @@ _Description_
 ## Environment and Tools
 
 - **Frontend:** React, Typescript.
-- **Build Tools:** Vite
+- **Build Tools:** Vite.
 - **Other Tools:** Git, GitHub.
+- **Node:** 20.10.0
 
 ## Steps to Run and Debug
 
