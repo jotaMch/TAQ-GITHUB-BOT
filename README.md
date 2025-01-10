@@ -9,6 +9,7 @@ _Description_
 - **Frontend:** React, etc.
 - **Build Tools:** Vite
 - **Other Tools:** Git, GitHub.
+- **Node:**20.10.0
 
 ## Steps to Run and Debug
 
