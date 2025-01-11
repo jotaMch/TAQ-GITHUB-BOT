@@ -6,10 +6,10 @@ _Description_
 
 ## Environment and Tools
 
-- **Frontend:** React, etc.
-- **Build Tools:** Vite
+- **Frontend:** React, Typescript.
+- **Build Tools:** Vite.
 - **Other Tools:** Git, GitHub.
-- **Node:**20.10.0
+- **Node:** 20.10.0
 
 ## Steps to Run and Debug
 

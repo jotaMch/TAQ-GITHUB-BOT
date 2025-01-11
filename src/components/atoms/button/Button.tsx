@@ -7,21 +7,18 @@ interface ButtonProps {
   border?: string;
   type?: 'button' | 'submit' | 'reset';
 }
+const buttonStyled = {
+  color: 'white',
+  borderRadius: '5px',
+  cursor: 'pointer',
+  fontSize: '24px',
+  fontWeight: 'bold',
+  height: '60px',
+};
 
-const Button: React.FC<ButtonProps> = ({ id, border, text, background = 'blue', type = 'button' }) => {
-  const buttonStyled = {
-    backgroundColor: background,
-    color: 'white',
-    border: border || 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-    fontSize: '24px',
-    fontWeight: 'bold',
-    height: '60px',
-  };
-
+const Button: React.FC<ButtonProps> = ({ id, border, text, background = 'blue' }) => {
   return (
-    <button type={type} style={buttonStyled} id={id} aria-label={text}>
+    <button style={{ ...buttonStyled, border, background }} id={id}>
       {text}
     </button>
   );

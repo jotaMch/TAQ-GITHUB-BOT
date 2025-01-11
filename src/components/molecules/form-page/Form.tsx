@@ -9,7 +9,6 @@ const Form: React.FC = () => {
   const [emailErro, setEmailErro] = useState<string>('');
   const [passwordErro, setPasswordErro] = useState<string>('');
 
-  console.log(emailValue, passwordValue);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setEmailErro('');
@@ -35,7 +34,7 @@ const Form: React.FC = () => {
 
   return (
     <div className='container'>
-      <h2>Bem vindo(a) ao Instaq</h2>
+      <h1>Bem vindo(a) ao Instaq</h1>
       <form onSubmit={handleSubmit}>
         <div className='flex-form'>
           <Label htmlFor='e-mail' text='E-mail' className='email-label' />
