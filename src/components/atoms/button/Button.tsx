@@ -5,7 +5,7 @@ interface ButtonProps {
   text?: string;
   background?: string;
   border?: string;
-  type?: 'button' | 'submit' | 'reset';
+  type?: 'submit';
 }
 const buttonStyled = {
   color: 'white',
