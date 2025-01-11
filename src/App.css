@@ -39,3 +39,10 @@ form {
 .erro{
     color: #e44;
 }
+
+.success{
+    color: rgb(24, 191, 19);
+    text-align: center;
+    margin-top: 14px;
+    font-size: 20px;
+}

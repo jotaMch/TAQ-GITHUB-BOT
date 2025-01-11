@@ -8,11 +8,13 @@ const Form: React.FC = () => {
   const [passwordValue, setPasswordValue] = useState<string>('');
   const [emailErro, setEmailErro] = useState<string>('');
   const [passwordErro, setPasswordErro] = useState<string>('');
+  const [success, setSuccess] = useState<string>('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setEmailErro('');
     setPasswordErro('');
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d).+$/;
     const emailRegexValidation = !emailRegex.test(emailValue);
@@ -21,6 +23,7 @@ const Form: React.FC = () => {
     if (emailRegexValidation) {
       setEmailErro('Formato de e-mail inválido');
     }
+
     if (passwordRegexValidation) {
       setPasswordErro('A senha precisa conter pelo menos 1 letra e 1 número.');
     } else if (passwordValue.length < 7) {
@@ -28,7 +31,7 @@ const Form: React.FC = () => {
     }
 
     if (!emailRegexValidation && !passwordRegexValidation && passwordValue.length >= 7) {
-      alert('Validação completa');
+      setSuccess('Validação completa');
     }
   };
 
@@ -40,9 +43,9 @@ const Form: React.FC = () => {
           <Label htmlFor='e-mail' text='E-mail' className='email-label' />
           <Input
             id='e-mail'
-            type='email'
+            type='text'
             className='email-input'
-            required={false}
+            required={true}
             value={emailValue}
             setValue={setEmailValue}
           />
@@ -61,6 +64,7 @@ const Form: React.FC = () => {
           <p className='erro'>{passwordErro}</p>
         </div>
         <Button type='submit' text='Entrar' background='#1d76d0' border='none' id='entrar' />
+        <p className='success'>{success}</p>
       </form>
     </div>
   );

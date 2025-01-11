@@ -4,7 +4,7 @@ interface InputProps {
   className?: string;
   required?: boolean;
   value: string;
-  setValue: React.Dispatch<React.SetStateAction<string>>;
+  setValue: (value: string) => void;
 }
 
 const inputStyled = {
@@ -15,8 +15,22 @@ const inputStyled = {
   fontSize: '22px',
 };
 
-const Input: React.FC<InputProps> = ({ id, type, className, required }) => {
-  return <input style={inputStyled} id={id} type={type} className={className} required={required} />;
+const Input: React.FC<InputProps> = ({ id, type, className, required, value, setValue }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value);
+  };
+
+  return (
+    <input
+      style={inputStyled}
+      id={id}
+      type={type}
+      className={className}
+      required={required}
+      value={value}
+      onChange={handleChange}
+    />
+  );
 };
 
 export default Input;
