@@ -6,7 +6,7 @@ import Button from '../../atoms/button/Button';
 const Form: React.FC = () => {
   const [emailValue, setEmailValue] = useState<string>('');
   const [passwordValue, setPasswordValue] = useState<string>('');
-  const [emailErro, setEmailErro] = useState<string>('');
+  const [emailError, setEmailError] = useState<string>('');
   const [passwordErro, setPasswordErro] = useState<string>('');
   const [success, setSuccess] = useState<string>('');
 
