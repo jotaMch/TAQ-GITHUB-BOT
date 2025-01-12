@@ -7,7 +7,7 @@ const Form: React.FC = () => {
   const [emailValue, setEmailValue] = useState<string>('');
   const [passwordValue, setPasswordValue] = useState<string>('');
   const [emailError, setEmailError] = useState<string>('');
-  const [passwordErro, setPasswordErro] = useState<string>('');
+  const [passwordError, setPasswordError] = useState<string>('');
   const [success, setSuccess] = useState<string>('');
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d).+$/;
