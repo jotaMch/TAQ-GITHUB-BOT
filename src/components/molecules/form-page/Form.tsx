@@ -14,14 +14,14 @@ const Form: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setEmailErro('');
+    setEmailError('');
     setPasswordErro('');
 
     const emailRegexValidation = !emailRegex.test(emailValue);
     const passwordRegexValidation = !passwordRegex.test(passwordValue);
 
     if (emailRegexValidation) {
-      setEmailErro('Formato de e-mail inválido');
+      setEmailError('Formato de e-mail inválido');
     }
 
     if (passwordRegexValidation) {
@@ -49,7 +49,7 @@ const Form: React.FC = () => {
             value={emailValue}
             setValue={setEmailValue}
           />
-          <p className='erro'>{emailErro}</p>
+          <p className='erro'>{emailError}</p>
         </div>
         <div className='flex-form'>
           <Label htmlFor='password' text='Senha' className='password-label' />
