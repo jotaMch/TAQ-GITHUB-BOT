@@ -9,14 +9,14 @@ const Form: React.FC = () => {
   const [emailError, setEmailError] = useState<string>('');
   const [passwordErro, setPasswordErro] = useState<string>('');
   const [success, setSuccess] = useState<string>('');
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d).+$/;
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setEmailErro('');
     setPasswordErro('');
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d).+$/;
     const emailRegexValidation = !emailRegex.test(emailValue);
     const passwordRegexValidation = !passwordRegex.test(passwordValue);
 
